@@ -97,13 +97,6 @@ public class BossListFragment extends Fragment implements BossView {
     public void displayBossViewData(Boss... bosses) {
         BossListAdapter adapter = new BossListAdapter(bosses);
 
-        adapter.setOnItemClickListener(new BossListAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick() {
-
-            }
-        });
-
         bossListRecycler.setAdapter(adapter);
 
     }
