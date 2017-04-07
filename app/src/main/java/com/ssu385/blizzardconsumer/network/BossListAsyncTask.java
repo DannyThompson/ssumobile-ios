@@ -22,13 +22,13 @@ public class BossListAsyncTask extends AsyncTask<String, String, BossList> {
 //        HttpUrl.Builder urlBuilder =
 //              HttpUrl.parse(
 //                  BlizzardConsumerApplication.
-//                  getInstance().getBaseApiUrl +
+//                  getApplicationInstance().getBaseApiUrl() +
 //                  BlizzardConsumerApplication.
-//                  getInstance().getBossRouteExtension)
+//                  getApplicationInstance().getBossRouteExtension())
 //               .newBuilder();
 //
-//        urlBuilder.addQueryParameter("apikey", BlizzardConsumerApplication.getInstance().getapiKey());
-//        urlBuilder.addQueryParameter("locale",  BlizzardConsumerApplication.getInstance().getLocale);
+//        urlBuilder.addQueryParameter("apikey", BlizzardConsumerApplication.getApplicationInstance().getApiKey());
+//        urlBuilder.addQueryParameter("locale",  BlizzardConsumerApplication.getApplicationInstance().getLocale());
 //
 //        String url = urlBuilder.build().toString();
 //
