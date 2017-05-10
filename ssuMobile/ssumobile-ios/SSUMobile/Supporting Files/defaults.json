@@ -1,0 +1,28 @@
+{
+    "edu.sonoma.modules.enabled" : [
+        "about",
+        "directory",
+        "calendar",
+        "news",
+        "radio",
+        "campusmap",
+        "resources",
+        "email",
+        "schedule",
+    ],
+    
+    "edu.sonoma.radio.stream.enabled" : true,
+    "edu.sonoma.radio.stream.disabled.message" : "KSUN Radio has switched to a streaming service which does not support mobile play, as it requires Adobe Flash. As soon as the stream becomes available again, it will be enabled on SSUMobile.",
+    "edu.sonoma.radio.stream.url" : "http://origin-ord-ksun.streamguys1.com/stream",
+    "edu.sonoma.radio.website" : "http://www.sonomastateradio.com",
+    "edu.sonoma.radio.schedule.url": "http://www.sonomastateradio.com/copy-of-schedule-1",
+
+    "edu.sonoma.email.login.enabled" : true,
+    "edu.sonoma.email.ldap.url" : "https://login.sonoma.edu",
+    "edu.sonoma.email.ldap.login.url" : "https://login.sonoma.edu/idp/profile/cas/login?execution=e1s1",
+    "edu.sonoma.email.mail.url" : "https://ldaps.sonoma.edu/portal/redir_exchange.cgi",
+    "edu.sonoma.email.googledocs.url" : "https://drive.google.com/a/sonoma.edu",
+    "edu.sonoma.email.email.domain" : "sonoma.edu",
+    "edu.sonoma.email.myssu.link.range" : "<!-- Begin MySSU link -->",
+    "edu.sonoma.email.session.id.cookie.name" : "JSESSIONID"
+}

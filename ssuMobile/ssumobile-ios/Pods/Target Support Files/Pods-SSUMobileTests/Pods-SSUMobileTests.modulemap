@@ -1,0 +1,6 @@
+framework module Pods_SSUMobileTests {
+  umbrella header "Pods-SSUMobileTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

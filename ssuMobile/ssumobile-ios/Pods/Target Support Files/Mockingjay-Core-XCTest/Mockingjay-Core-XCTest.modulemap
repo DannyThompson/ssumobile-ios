@@ -1,0 +1,6 @@
+framework module Mockingjay {
+  umbrella header "Mockingjay-Core-XCTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
