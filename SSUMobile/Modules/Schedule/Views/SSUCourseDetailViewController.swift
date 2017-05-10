@@ -38,25 +38,7 @@ class SSUCourseDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        /*
-         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-         
-         let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ClassScheduleTVC") as! ClassScheduleTableViewController
-         
-         self.present(resultViewController, animated:true, completion:nil)
-         */
         title = classData?.department
-        //        backgroundImageView = UIImageView(frame: self.view.bounds)
-        //        backgroundImageView?.image = UIImage(named: "DetailsBackgroundImage")
-        //        self.view.addSubview(backgroundImageView!)
-        
-        
-
-       // buildingTapGesture = UITapGestureRecognizer(target: self._building, action: #selector(self.handleBuildingClick(_:)))
-        //personTapGesture = UITapGestureRecognizer(target: self._instructor, action: #selector(self.handlePersonClick(_:)))
-        
-        //        _building.addGestureRecognizer(tapGesture!)
         roundViewCorners()
         displayClassData()
     }
@@ -102,15 +84,15 @@ class SSUCourseDetailViewController: UIViewController {
         else{
             _component.text = "Discussion"
         }
-        _units.text = "Units: " + "\((classData?.max_units)!)"
-        if ( (classData?.combined_section)! != "" ){
+        _units.text = "Units: " + "\((classData?.max_units) ?? "")"
+        if ( (classData?.combined_section) ?? "" != ""){
             _combinedSection.text = "Combined Section? Yes"
         }
         else{
             _combinedSection.text = "Combined Section? No"
         }
-        _designation.text = "Designation: " + "\((classData?.designation)!)"
-        _section.text = "Section " + "\((classData?.section)!)"
+        _designation.text = "Designation: " + "\((classData?.designation) ?? "" )"
+        _section.text = "Section " + "\((classData?.section) ?? "" )"
         
         if let f_id = classData?.facility_id {
             let add_details = SSUCourseDetailHelper.location(f_id)
@@ -166,26 +148,6 @@ class SSUCourseDetailViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "building"{
-//            let building: SSUBuilding = SSUDirectoryBuilder.building(withName: (classData?.building)!, in: SSUDirectoryModule.instance.context)
-//            let controller: SSUDirectoryViewController = segue.destination as! SSUDirectoryViewController
-//            let predicate = NSPredicate(format: "building = %@", building)
-//            controller.defaultPredicate = predicate
-//            controller.entities = [SSUDirectoryEntityPerson, SSUDirectoryEntityDepartment, SSUDirectoryEntitySchool]
-//            controller.loadEntityName(SSUDirectoryEntityDepartment, using: nil)
-//        }
-//        else if segue.identifier == "person"{
-//            let person: SSUPerson = SSUDirectoryBuilder.personWithFirstName((classData?.first_name)!, (classData?.last_name)! , SSUDirectoryModule.instance.context)
-//            let controller: SSUDirectoryViewController = segue.destination as! SSUDirectoryViewController
-//            let predicate = NSPredicate(format: "person = %@", person)
-//            controller.defaultPredicate = predicate
-//            controller.entities = [SSUDirectoryEntityDepartment, SSUDirectoryEntityBuilding, SSUDirectoryEntitySchool]
-//            controller.loadEntityName(SSUDirectoryEntityDepartment, using: nil)
-//        }
-//        else{
-//            print("Unrecognized segue: \(segue)")
-//        }
-//
     }
     
 }

@@ -11,24 +11,10 @@ import UIKit
 class SSUsearchResultTableViewController: UITableViewController {
     
     var _classes: [SSUCourse]?
-  //  var classes: [[SSUCourse]]?
-//    private var sects: [Sections]?
-//    
-//    private struct Sections {
-//        var title: String
-//        var courses = [SSUCourse]()
-//        var count = 0
-//        init(title: String, course: SSUCourse) {
-//            self.title = title
-//            addOrIgnore(course)
-//            
-//        }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //title = "Search Results"
         let image = UIImage(named: "table_background_image")
         let backgroundImageView = UIImageView(image: image)
         self.tableView.backgroundView = backgroundImageView
@@ -40,8 +26,6 @@ class SSUsearchResultTableViewController: UITableViewController {
             noResults.textColor = UIColor.white
             view.addSubview(noResults)
         }
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,8 +74,6 @@ class SSUsearchResultTableViewController: UITableViewController {
                 let detailsVC = segue.destination as! SSUCourseDetailViewController
                 detailsVC.passClassData(oldClass)
             }
-            
-                
         }
     }
 

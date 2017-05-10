@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SSUMobile/Modules/SSUsearchResultTableViewController.swift"
-            timestampString = "516144759.696797"
+            timestampString = "516149610.995196"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>

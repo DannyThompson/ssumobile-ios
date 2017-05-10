@@ -22,7 +22,7 @@ class SSUDetailedSearchViewController: UIViewController, UISearchBarDelegate {
     var startTime: String = ""
     var endTime: String = ""
     var classType: String = ""
-    var classNumber: String = ""
+    var classNumber: String = "" //While this var is called class number, it actually relates to the catalog #
     var section: Int = 0
     var department: String = ""
     var subject: String = ""
@@ -74,7 +74,7 @@ class SSUDetailedSearchViewController: UIViewController, UISearchBarDelegate {
             department = searchBar.text!
         }
         
-        if searchBar.placeholder == "Class Number" {
+        if searchBar.placeholder == "Class Catalog Number" {
             classNumber = ""
             classNumber = searchBar.text!
             
