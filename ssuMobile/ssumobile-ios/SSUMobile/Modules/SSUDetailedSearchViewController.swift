@@ -127,7 +127,6 @@ class SSUDetailedSearchViewController: UIViewController, UISearchBarDelegate {
                 (minUnits == "" || _class.min_units == minUnits)) {
                     
                 temp.append(_class)
-                
             }
         }
         
