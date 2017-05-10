@@ -1,0 +1,6 @@
+framework module MJDijkstra {
+  umbrella header "MJDijkstra-umbrella.h"
+
+  export *
+  module * { export * }
+}

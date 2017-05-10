@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'SSUMobile' target in the 'SSUMobile' project
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+    #import "SSUSharedUtilities.h"
+#endif
